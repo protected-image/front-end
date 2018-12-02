@@ -1,0 +1,20 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+__diff_output__
+
+# production
+/dist
+/storybook-static
+/.build-configs-temp
+
+# misc
+.DS_STORE
+*.log
+.vscode
+.idea
+.ignore
