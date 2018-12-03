@@ -11,6 +11,15 @@ module.exports = function(base, env) {
   return {
     devtool: isDev ? 'eval' : 'source-map',
     mode: env.mode,
+    devServer: {
+      historyApiFallback: {
+        rewrites: [
+          { from: /^\/$/, to: '/index.html' },
+          { from: /^\/image/, to: '/image.html' },
+          { from: /./, to: '/404.html' },
+        ],
+      },
+    },
     output: {
       filename: 'js/[name].[hash].js',
       path: path.resolve(__dirname, 'dist'),
@@ -65,6 +74,24 @@ module.exports = function(base, env) {
       new CleanWebpackPlugin(['dist']),
       new HtmlWebPackPlugin({
         template: './src/index.html',
+        minify: !isDev && {
+          collapseWhitespace: true,
+          preserveLineBreaks: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebPackPlugin({
+        template: './src/image.html',
+        filename: 'image.html',
+        minify: !isDev && {
+          collapseWhitespace: true,
+          preserveLineBreaks: true,
+          removeComments: true,
+        },
+      }),
+      new HtmlWebPackPlugin({
+        template: './src/404.html',
+        filename: '404.html',
         minify: !isDev && {
           collapseWhitespace: true,
           preserveLineBreaks: true,
