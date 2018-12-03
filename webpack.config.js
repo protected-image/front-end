@@ -15,13 +15,14 @@ module.exports = function(base, env) {
       historyApiFallback: {
         rewrites: [
           { from: /^\/$/, to: '/index.html' },
-          { from: /^\/image/, to: '/image.html' },
+          { from: /^\/\w+$/, to: '/image.html' },
           { from: /./, to: '/404.html' },
         ],
       },
     },
     output: {
       filename: 'js/[name].[hash].js',
+      publicPath: '/',
       path: path.resolve(__dirname, 'dist'),
     },
     module: {
