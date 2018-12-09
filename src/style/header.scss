@@ -1,3 +1,79 @@
 header {
-    background: yellow;
+    background: #0087F7;
+}
+
+h1, h2, h3, p {
+    font-size: 1.8rem;
+    color: #0087F7;
+    -webkit-font-smoothing: antialiased;
+    line-height: 2.2rem;
+}
+
+.example {
+	padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#drop_zone {
+    border: 3px dashed #607d8b;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 2px;
+    padding: 25px;
+    text-align: center;
+    font: 20pt bold 'Vollkorn';
+    color: #bbb;
+}
+
+#drop_zone:hover {
+    background: #cfd8dc;
+    border-color: #546e7a;
+    color: #263238;
+    cursor:pointer;
+}
+
+.flx-wrapper {
+	display:flex;
+	justify-content: center;
+	align-self: center;
+}
+
+.flx-element {
+	min-width:300px;
+	margin-bottom:30px;
+}
+
+.inputfile {
+	width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;    
+}
+.inputfile  + label {
+	    color: #d3394c;
+    border: 2px solid currentColor;
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.3rem 1.25rem;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile + label:hover {
+	color:#722040;
 }
