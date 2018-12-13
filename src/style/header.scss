@@ -2,13 +2,13 @@ body {
   background: $body-bg-color;
   font-family: $body-font-family;
   min-height: calc(
-    100vh - 130px
-  ); /*для того чтобы посмотреть как будет смотреться фоновая часть! потом убрать!*/
+    100vh - #{$header-height}
+  ); 
   header {
     display: flex;
     justify-content: space-between;
     background: $global-site-color;
-    height: 130px;
+    height: $header-height;
     .header__section:first-child {
       flex: 0 1 326px;
     }
@@ -68,9 +68,12 @@ body {
   }
   .conntent {
     background: $global-site-color;
-    margin: 40px 15px;
+    margin-top: $content-margin-top;
+    margin-bottom: $content-margin-bottom;
+    margin-left: 15px;
+    margin-right: 15px;
     min-height: calc(
-      100vh - 210px
-    ); /* для того чтобы посмотреть как будет смотреться фоновая часть! потом убрать! */
+      100vh - #{$content-height}
+    ); 
   }
 }

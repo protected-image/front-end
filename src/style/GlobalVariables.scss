@@ -15,8 +15,15 @@ $header-fb-color:#fff; //header icon color FB
 $header-insta-color:#fc0; //header icon color Insta
 $header-menu-underline-color:#fc0; //hover horizontal top-menu color
     /*color-end*/
+    /*size-start*/
+$header-height:130px;    
+    /*size-end*/
 /*header-end*/
 
 /*content-start*/
-
+    /*size-start*/
+$content-margin-top:40px; // margin on top
+$content-margin-bottom:40px; //margin on bottom   
+$content-height:calc(#{$header-height} + #{$content-margin-top} + #{$content-margin-bottom}); // height content
+    /*size-end*/
 /*content-end*/
