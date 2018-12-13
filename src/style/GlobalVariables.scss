@@ -1,19 +1,19 @@
 /*body-start*/ 
     /*color-start*/
-$global-site-color:#000023; //цвет нашего сайта
-$body-bg-color: scale-color($global-site-color, $lightness: -12.9%); // цвет фона сайта темнее на 12,9%
+$global-site-color:#000023; //site color
+$body-bg-color: scale-color($global-site-color, $lightness: -12.9%); // body bg color darker on 12.9%
     /*color-end*/
     /*font-start*/
-$body-font-family: Arial, Helvetica, sans-serif; //основной шрифт сайта
+$body-font-family: Arial, Helvetica, sans-serif; //main font on site
     /*font-end*/
 /*body-end*/
 
 /*header-start*/
     /*color-start*/
-$header-text-color:#fff; //цвет текста хэдера
-$header-fb-color:#fff; //цвет иконки фейсбук
-$header-insta-color:#fc0; //цвет иконки инста
-$header-menu-underline-color:#fc0; //цвет горизонтального меню при наведении
+$header-text-color:#fff; //text color header
+$header-fb-color:#fff; //header icon color FB
+$header-insta-color:#fc0; //header icon color Insta
+$header-menu-underline-color:#fc0; //hover horizontal top-menu color
     /*color-end*/
 /*header-end*/
 

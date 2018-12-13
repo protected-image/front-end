@@ -9,6 +9,9 @@ body {
     justify-content: space-between;
     background: $global-site-color;
     height: 130px;
+    .header__section:first-child {
+      flex: 0 1 326px;
+    }
     .header__section {
       display: flex;
       align-items: center;
