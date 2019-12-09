@@ -1,0 +1,29 @@
+/*body-start*/ 
+    /*color-start*/
+$global-site-color:#000023; //site color
+$body-bg-color: scale-color($global-site-color, $lightness: -12.9%); // body bg color darker on 12.9%
+    /*color-end*/
+    /*font-start*/
+$body-font-family: Arial, Helvetica, sans-serif; //main font on site
+    /*font-end*/
+/*body-end*/
+
+/*header-start*/
+    /*color-start*/
+$header-text-color:#fff; //text color header
+$header-fb-color:#fff; //header icon color FB
+$header-insta-color:#fc0; //header icon color Insta
+$header-menu-underline-color:#fc0; //hover horizontal top-menu color
+    /*color-end*/
+    /*size-start*/
+$header-height:130px;    
+    /*size-end*/
+/*header-end*/
+
+/*content-start*/
+    /*size-start*/
+$content-margin-top:40px; // margin on top
+$content-margin-bottom:40px; //margin on bottom   
+$content-height:calc(#{$header-height} + #{$content-margin-top} + #{$content-margin-bottom}); // height content
+    /*size-end*/
+/*content-end*/

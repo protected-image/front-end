@@ -10,6 +10,7 @@ module.exports = function(base, env) {
 
   return {
     devtool: isDev ? 'eval' : 'source-map',
+    entry: ['babel-polyfill', './src/index.js'],
     mode: env.mode,
     devServer: {
       historyApiFallback: {

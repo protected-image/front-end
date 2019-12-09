@@ -1,3 +1,79 @@
-header {
-    background: yellow;
+body {
+  background: $body-bg-color;
+  font-family: $body-font-family;
+  min-height: calc(
+    100vh - #{$header-height}
+  ); 
+  header {
+    display: flex;
+    justify-content: space-between;
+    background: $global-site-color;
+    height: $header-height;
+    .header__section:first-child {
+      flex: 0 1 326px;
+    }
+    .header__section {
+      display: flex;
+      align-items: center;
+      .header__item {
+        padding: 10px 15px;
+        font-size: 20px;
+        margin-left: 5px;
+        a {
+          text-decoration: none;
+          color: $header-text-color;
+        }
+      }
+      .headerIcon {
+        padding: 10px;
+        .facebook {
+          svg {
+            height: 30px;
+            fill: $header-fb-color;
+          }
+        }
+        .insta {
+          svg {
+            height: 30px;
+            fill: $header-insta-color;
+          }
+        }
+      }
+      .headerLogo img {
+        height: 90px;
+      }
+    }
+    menu.header__section {
+      .header__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .underline {
+          width: 0;
+          height: 2px;
+          background: $header-menu-underline-color;
+          top: 5px;
+        }
+      }
+      .header__item:hover .underline {
+        width: 100%;
+        transition: 0.3s ease-in;
+      }
+      .header__item:hover a {
+        color: $header-menu-underline-color;
+        transition: 0.3s ease-in;
+      }
+    }
+  }
+  .conntent {
+    background: $global-site-color;
+    margin-top: $content-margin-top;
+    margin-bottom: $content-margin-bottom;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: calc(
+      100vh - #{$content-height}
+    ); 
+  }
 }

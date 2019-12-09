@@ -1,3 +1,3 @@
 import './main.scss';
 
-console.log('work');
+import './js/crypto';
